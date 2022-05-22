@@ -27,6 +27,7 @@ int pal(char str[20]){
 int main()
 {
     char str[20];
+    cout << "Enter your string: " << flush;
     cin>>str;
     // cout<<str;
     pal(str);

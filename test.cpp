@@ -1,13 +1,20 @@
-#include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 int main()
 {
-    
-   int array[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+   int t;
+   cin >> t;
    
-    for (int i = 0; i <10;i++){
-       cout<<array[i]<<"  " << static_cast<void *>(addressof(array[i])) << endl;
-    }
+   while(t--){
+      int rev = 0;
+      int a;
+      cin >> a;
+      while(a>0){
+      rev = ((rev * 10) + (a % 10));
+      a /= 10;
+      }
+      cout << rev<<endl;
+   }
    return 0;
 }
